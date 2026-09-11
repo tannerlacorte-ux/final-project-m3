@@ -10,18 +10,19 @@
 section {
   padding: 0 32px;
 }
+
 .container {
   padding: 96px 0;
 }
 
-.row {
+.nav__row {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  flex-direction: column;
-  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
 }
 
 .purple {
@@ -31,6 +32,7 @@ section {
 nav {
   padding-top: 32px;
   display: flex;
+  justify-content: space-between;
   
 }
 
@@ -59,16 +61,12 @@ nav {
   width: 100%;
   max-width: 1200px;
   padding: 0 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .nav__links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 2px;;
   list-style-type: none;
 }
 
@@ -104,7 +102,16 @@ nav {
 /* HEADER */
 
 header {
-  position: relative;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__container {
+  padding: 96px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -117,20 +124,21 @@ h1 {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  flex-direction: column;
-  text-align: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-direction: row;
  }
 
 .header__description {
-  width: 40px;
+  width: calc(100% - 60%);
   display: flex;
-  text-align: center;
   flex-direction: column;
-  align-items: center;
 }
 
+img {
+  width: 100%;
+}
 .header__description--para {
   margin: 32px 0;
 }
@@ -139,19 +147,21 @@ h1 {
   width: 100%;
   max-width: 448px;
   height: 68px;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .header__email--input {
+  width: 100%;
   border-radius: 500px;
   border: 2px solid rgb(229, 231, 235);
   padding: 20px 192px 20px 32px;
   color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
-  position: relative;
+  position: absolute;
   top: 0;
   bottom: 0;
   z-index: 1;
@@ -172,9 +182,26 @@ h1 {
   transition: all 300ms ease;
 }
 
+.header__customer--logo {
+  margin-top: 16px;
+  padding-right: 128px;
+  opacity: 0.5;
+}
+
+.header__customer--title {
+  margin-top: 80px;
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6;
+}
+
 .header__img--wrapper {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-items: auto;
+  width: calc(100% - 40%);
+  padding-left: 88px;
+}
+
+.header__img {
+  width: 100%;
+  max-width: 768px;
 }
