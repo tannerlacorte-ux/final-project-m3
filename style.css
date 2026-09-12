@@ -105,11 +105,10 @@ nav {
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .header__container {
-  padding: 96px 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -140,6 +139,7 @@ h1 {
 img {
   width: 100%;
 }
+
 .header__description--para {
   margin: 32px 0;
 }
