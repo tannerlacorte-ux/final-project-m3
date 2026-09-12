@@ -210,3 +210,13 @@ img {
 
 
 /* FEATURES */
+
+#features {
+  position: relative;
+}
+
+.feature__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
