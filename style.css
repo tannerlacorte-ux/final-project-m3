@@ -302,6 +302,10 @@ img {
 
 /* QUALITY */
 
+.quality__container {
+  padding: 96px 0;
+}
+
 .quality__row {
   display: flex;
   justify-content: space-between;
