@@ -885,6 +885,10 @@ img {
   margin-top: 4px;
 }
 
+.testimonial__rating i {
+  color: rgba(246, 173, 85);
+}
+
 
 .testimonial__title {
   color: #4a5568;
@@ -952,6 +956,11 @@ img {
   transition: all 300ms ease;
   cursor: pointer;
   border: none;
+}
+
+.testimonial__button svg {
+  height: 16px;
+  width: 16px;
 }
 
 .divider {
