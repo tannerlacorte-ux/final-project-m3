@@ -295,6 +295,7 @@ img {
 
 #features {
   position: relative;
+  padding: 0 32px;
 }
 
 
@@ -304,6 +305,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
+  margin: 0 auto;
+}
+
+.features__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -336,10 +346,6 @@ img {
   line-height: 1.5;
   margin: 16px 0;
   letter-spacing: 0.025em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 
 }
 .feature__title {
@@ -1449,6 +1455,10 @@ footer {
 
   .quality__row {
     flex-direction: column-reverse;
+  }
+
+  .features__para {
+    font-size: 14px;
   }
 
   .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
